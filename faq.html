@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Perguntas Frequentes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+     <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
+     <nav id="side-menu" class="side-menu">
+     <a href="index.html">Home</a>
+     <a href="#sobre">Sobre</a>
+     <a href="#time">Time</a>
+     <a href="#doacoes">Doações</a>
+     <a href="alimentos.html">Doação Alimentos</a>
+     <a href="vestimentas.html">Doação de Lookinhos</a>
+     <a href="dinheiro.html">Doe Quantias</a>
+     <a href="faq.html">FAQ - Perguntas</a>
+     <a href="login.html">Login</a>
+     <a href="cadastro.html">Cadastrar</a>
+     </nav>
+    </header>
+    <main>
+    <main>
+    <div class="faq-container">
+
+      <div class="barra-pesquisa">
+        <input type="text" id="pesquisa" placeholder="Digite aqui uma palavra chave, exemplo: 'doações'"
+          onkeyup="filtrarFAQ()">
+      </div>
+
+      <h1>FAQ - PERGUNTAS FREQUENTES</h1>
+
+      <div class="faq-card">
+        <p><strong>1. O QUE É A REDE AURORA?</strong></p>
+        <p>A Rede Aurora é uma plataforma digital que conecta pessoas dispostas a ajudar com comunidades afetadas por desastres ambientais, por meio da doação de recursos, voluntariado presencial e apoio logístico.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>2. COMO POSSO ME CADASTRAR COMO VOLUNTÁRIO?</strong></p>
+        <p>Clique no menu no canto superior direito da página, em seguida, basta acessar a aba “DOAÇÕES” e em seguida clicar em “MISSÕES”, então basta preencher o formulário com seus dados pessoais, localização, habilidades e disponibilidade. Após o cadastro, você poderá visualizar oportunidades compatíveis com seu perfil.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>3. É POSSÍVEL AJUDAR SEM SAIR DE CASA?</strong></p>
+        <p>Sim. Você pode contribuir financeiramente por meio da nossa Carteira Digital Solidária, doar mantimentos para pontos de coleta ou participar de ações remotas, como organização de campanhas e apoio logístico.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>4. COMO FUNCIONA A CARTEIRA DIGITAL SOLIDÁRIA?</strong></p>
+        <p>A carteira permite que você doe qualquer valor com segurança e transparência. Você poderá acompanhar, em tempo real, como os recursos estão sendo utilizados, por meio de relatórios e mapas interativos.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>5. COMO SEI QUE MINHA DOAÇÃO ESTÁ SENDO USADA CORRETAMENTE?</strong></p>
+        <p>A Rede AURORA possui um sistema de transparência total. Todas as doações são rastreadas e alocadas com base em critérios de urgência e necessidade, e os dados são exibidos publicamente na área de transparência da plataforma.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>6. POSSO DOAR MANTIMENTOS OU OUTROS ITENS FÍSICOS?</strong></p>
+        <p>Sim. A plataforma informa os itens mais necessários em cada situação, bem como os pontos de coleta mais próximos. Também é possível cadastrar-se para realizar entregas em locais específicos.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>7. QUAIS TIPOS DE DESASTRE A AURORA COBRE?</strong></p>
+        <p>A Rede AURORA atua em situações como enchentes, deslizamentos, queimadas, terremotos, secas severas e outros eventos climáticos extremos que impactem comunidades.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>8. QUEM PODE USAR A PLATAFORMA?</strong></p>
+        <p>Qualquer pessoa pode acessar o site para acompanhar as ações e ajudar de alguma forma. Para atuar como voluntário, é necessário ser maior de 16 anos e realizar o cadastro completo.</p>
+      </div>
+
+      <div class="faq-card">
+        <p><strong>9. COMO RECEBO ATUALIZAÇÕES SOBRE NOVAS EMERGÊNCIAS??</strong></p>
+        <p>Ao se cadastrar, você pode optar por receber notificações por e-mail ou no próprio aplicativo da Rede Viva com alertas e chamadas para ação de acordo com sua região.</p>
+      </div>
+
+       <div class="faq-card">
+        <p><strong>10. A REDE AURORA É UMA ONG?</strong></p>
+        <p>A Rede AURORA é uma iniciativa tecnológica de impacto social, desenvolvida para atuar em parceria com ONGs, órgãos públicos, empresas e cidadãos. Toda a operação é feita com base em princípios de ética, transparência e colaboração.</p>
+      </div>
+</main>
+<footer class="s-home-footer">
+  <div class="s-home-footer-container">
+    <div class="s-home-footer-left">
+      <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+    </div>
+    <div class="s-home-footer-right">
+      <p>+55 11 98234-5678 – Questões gerais</p>
+      <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+      <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+      <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

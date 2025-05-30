@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um AU.</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+     <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
+     <nav id="side-menu" class="side-menu">
+     <a href="index.html">Home</a>
+     <a href="#sobre">Sobre</a>
+     <a href="#time">Time</a>
+     <a href="#doacoes">Doações</a>
+     <a href="alimentos.html">Doação Alimentos</a>
+     <a href="vestimentas.html">Doação de Lookinhos</a>
+     <a href="dinheiro.html">Doe Quantias</a>
+     <a href="faq.html">FAQ - Perguntas</a>
+     <a href="login.html">Login</a>
+     <a href="cadastro.html">Cadastrar</a>
+     </nav>
+    </header>
+    <main>
+
+    <section class="intro">
+    <div class="s-content-voluntarios">
+      <h1>QUE TAL SE VOLUNTARIAR?!</h1>
+      <h2>FAÇA PARTE DO Time AU.</h2>
+      <p>
+        Você sabia que uma mãozinha nunca é de mais? Pois bem, fazer parte do Time AU. ao lado de missões,
+        vai muito além do que você imagina. Nós te damos espaço até hoje e local e ajudar em atividades especiais,
+        o nosso time busca com muita alegria e respeito o objetivo de também RECONSTRUIR.
+      </p>
+      <p>
+        Ser proativo(a), animado(a), destemido(a) e esbanjar alegria até mesmo em momentos de tragédia,
+        são os requisitos mínimos para ser voluntário(a).
+      </p>
+      <p><strong>Que tal embarcar nessa jornada com a rede aurora?!</strong></p>
+    </section>
+
+    <section class="form-section">
+      <form id="volunteerForm">
+        <h3>Preencha o formulário abaixo caso queira fazer parte desse time!</h3>
+
+        <div class="form-group">
+          <label for="nome">nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="data">data de nascimento:</label>
+          <input type="date" id="data" name="data" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">número de telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="emergencia">contato de emergência:</label>
+          <input type="tel" id="emergencia" name="emergencia" required />
+        </div>
+
+        <div class="form-group endereco">
+          <label for="endereco">endereço:</label>
+          <input type="text" id="endereco" name="endereco" required />
+        </div>
+
+        <button type="submit">Enviar dados</button>
+      </form>
+    </div>
+    </section>
+    <footer class="s-home-footer">
+  <div class="s-home-footer-container">
+    <div class="s-home-footer-left">
+      <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+    </div>
+    <div class="s-home-footer-right">
+      <p>+55 11 98234-5678 – Questões gerais</p>
+      <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+      <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+      <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
+    </div>
+  </div>
+   </footer>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

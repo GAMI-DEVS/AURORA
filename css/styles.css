@@ -1,0 +1,947 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfcd1;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #B3CC57;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: #FFD8E4;
+  padding-top: 60px;
+  transition: 0.3s ease;
+  z-index: 1001;
+}
+
+.side-menu a {
+  display: block;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu a:hover {
+  background-color: #c992ff;
+}
+
+#s-home-hero {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
+  padding: 40px 20px 0px;
+  overflow-x: hidden;
+}
+
+.s-home-hero-img img  {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.s-home-hero-content {
+  background-color: #fefbd9;
+  padding: 0 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s-home-boasvindas {
+  font-size: 23px;
+  font-weight: bold;
+  color: #742bcd;
+  margin-left: 40px;
+}
+
+.s-home-logo-slogan img {
+  max-width: 400px;
+  height: auto;
+}
+
+.s-home-btn {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 15px;
+  text-align: center;
+  background-color: #ffbe57;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 290px;
+  border-radius: 100px;
+  margin-left: 200px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sobre{
+  background-color: #a04def;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sobre .left,
+.sobre .right {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.sobre .left img{
+    max-width: 350px;
+}
+
+.sobre .right{
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfcd1;
+    padding: 40px;
+    color: #000;
+    max-height: 250px;
+    margin-top: 70px;
+    margin-right: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sobre h3 {
+  color: #B3CC57;
+  padding: 5px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 35px;
+  text-shadow: 2px 2px #878686;
+}
+
+.time {
+  text-align: center;
+  padding: 50px;
+  background-color: #a04def;
+}
+
+.time h2{
+    color: white;
+    font-size: 50px;
+}
+
+.cards-time{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.card-time{
+  background-color: #ffbe57;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+  max-height: 400px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-time img{
+    width: 120px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#btn-linkedin, #btn-github{
+    background-color: #0077b5;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-github{
+    background-color: #24292e;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.doacoes {
+  padding: 2rem;
+  background-color: #fdfcd1;
+  text-align: center;
+}
+
+.doacoes img{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.doacoes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 45%; 
+  padding: 40px;
+  border-radius: 8px;
+  color: #000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box.green {
+  background-color: #cfe7a7;
+  width: 350px;
+  height: 300px;
+}
+
+.box.orange {
+  background-color: #ffbe57;
+  width: 350px;
+  height: 300px;
+}
+
+.s-home-footer {
+  background-color: #a04def;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 150px;
+}
+
+.s-home-footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.s-home-footer-left {
+  width: 40%;
+  font-size: 30px;
+}
+
+.s-home-footer-titulo span {
+  font-weight: bold;
+}
+
+.s-home-footer-right {
+  width: 55%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*pag de alimentos*/
+
+.s-descricao-content{
+  padding: 100px 20px;
+  margin: 0 auto; 
+  max-width: 1020px;
+} 
+
+.s-descricao-alimentos {
+  padding: 40px;
+  margin: 0 auto; 
+}
+
+.apresentacao{
+  background-color: #FFBE40;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-height: 150px;
+    font-weight: bold;
+  font-size: 18px;
+}
+
+.descricao-alimentos{
+  max-width: 1000px;
+}
+
+.descricao-alimentos p {
+  font-size: 16px;
+  background-color: #9ac43c;
+  padding: 25px;
+}
+
+.s-lista-alimentos {
+  padding: 20px 40px;
+  max-width: 1020px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.alimentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.alimentos-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.lista-alimentos {
+  flex: 1;
+  min-width: 250px;
+}
+
+.lista-alimentos ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lista-alimentos li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.busca-locais {
+  background-color: #8643EC;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  max-width: 1020px;
+  margin: 0 auto; 
+}
+
+#input-pesquisa {
+  display: block;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Locais */
+.card-endereco {
+  display: flex;
+  gap: 20px;
+  background-color: #8643EC;
+  padding: 20px;
+  margin: 20px auto;
+  color: black;
+  max-width: 900px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.card-endereco img {
+  width: 150px;
+  height: auto;
+}
+
+.conteudo-endereco {
+  background-color: white;
+  padding: 20px;
+  flex: 1;
+}
+
+.info-endereco {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.btn-localizacao {
+  background-color: orange;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.necessidade {
+  background-color: #f4d03f;
+  padding: 6px 10px;
+}
+
+/*pagina de doação de roupas*/
+.secao-roupas {
+  padding: 40px 20px;
+  background-color: #fdfcd1;
+  margin-top: 90px;
+}
+
+.bloco-intro-roupas {
+  background-color: #ffe6a1;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bloco-intro-roupas p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.conteudo-roupas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  gap: 20px;
+}
+
+.lista-dicas-roupas {
+  flex: 2;
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bloco-observacao {
+  flex: 1;
+  background-color: #ffc24b;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*pagina de doação de dinheiro*/
+
+.secao-doacao-dinheiro {
+  padding: 40px 20px;
+  background-color: #fdfcd1;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-doacao-dinheiro {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8643EC;
+  text-shadow: 2px 2px #b98df2;
+  margin-bottom: 20px;
+}
+
+.texto-explicacao {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.bloco-total-arrecadado {
+  background-color: #9b4df5;
+  color: black;
+  padding: 40px 80px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.valor-grande {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.valor-grande span {
+  font-size: 24px;
+  display: block;
+}
+
+.legenda-total {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.bloco-destinos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.box-destino {
+  width: 255px;
+  height: 190px;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+}
+
+.box-destino p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.box-destino span {
+  font-size: 13px;
+}
+
+/* Cores individuais */
+.laranja {
+  background-color: #ffbe57;
+}
+
+.rosa {
+  background-color: #f69bd1;
+}
+
+.verde {
+  background-color: #cfe7a7;
+}
+
+.secao-informacoes-bancarias {
+  background-color: #fdfcd1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-doacao-banco {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.destaque-aurora {
+  color: #a04def;
+}
+
+.subtitulo-doacao-banco {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dados-bancarios {
+  font-size: 14px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.dados-bancarios ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.bloco-final-doacao {
+  background-color: #ffbe57;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/*pagina de voluntarios*/
+
+.s-content-voluntarios{
+  padding: 40px 300px;
+  margin-top: 90px;
+}
+.intro h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #9ac43c;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #999;
+}
+
+.intro h2 {
+  text-align: center;
+  color: #805bd3;
+  margin-top: 10px;
+}
+
+.intro p {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.form-section {
+  background-color: #FFBE40;
+  padding: 25px;
+  margin: 40px auto;  
+  border-radius: 4px;
+  max-width: 700px;         
+  width: 100%;           
+  box-sizing: border-box; 
+}
+
+.form-section h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%; 
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
+}
+
+.endereco {
+  flex: 1 1 100%;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #805bd3;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* FAQ */
+.faq-container {
+  max-width: 700px;
+  width: 90%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.faq-container h1 {
+  color: #FFBE40;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px #999;
+}
+
+.faq-card {
+  background-color: #B3CC57;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.faq-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+#pesquisa{
+  max-width: 400px;
+  width: 100%;
+  margin: 30px auto;
+  border-color: #742bcd;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+/*pagina de conscientização*/
+
+.conscientizacao {
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #805bd3;
+  text-shadow: 2px 2px 3px #999;
+  margin-bottom: 10px;
+  margin-top: 90px;
+}
+
+.subtitulo {
+  background-color: #FFBE40;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.descricao {
+  background-color: #B3CC57;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color: #000;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  padding: 40px;
+  color: #fff;
+  width: 390px;
+  border-radius: none;
+  max-height: 300px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.card-purple {
+  background-color: #8643EC;
+}
+
+.card-yellow {
+  background-color: #FFBE40;
+  color: #000;
+}
+
+
+/* RESPONSIVO - TELAS MÉDIAS */
+@media (max-width: 768px) {
+  .s-home-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .s-home-boasvindas {
+  margin-left: 0;
+  text-align: center;
+}
+
+  .s-home-hero-img img {
+    max-width: 100%;
+  }
+
+  .s-home-hero-content {
+    align-items: center;
+  }
+
+  .s-home-btn {
+    margin-left: 0;
+    max-width: 200px;
+  }
+
+  .cards-time {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .s-home-footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-home-footer-left,
+  .s-home-footer-right {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-home-logo-slogan-img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre .right {
+    margin: 20px 0;
+    max-height: none; /* libera altura */
+    width: 90%;
+  }
+
+  .sobre .left img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .sobre h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sobre .right p {
+    text-align: justify;
+    font-size: 15px;
+  }
+}
+
+/* RESPONSIVO - TELAS PEQUENAS */
+@media (max-width: 480px) {
+  .s-home-boasvindas {
+    font-size: 18px;
+  }
+
+  .s-home-btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .side-menu {
+    width: 200px;
+  }
+
+  .card-time {
+    width: 90%;
+  }
+
+  .doacoes img {
+    max-width: 100%;
+  }
+}
+/* Responsivo para cards de endereços */
+@media (max-width: 768px) {
+  .card-endereco {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 30px;
+  }
+
+  .card-endereco img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .conteudo-endereco {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .info-endereco {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btn-localizacao {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .necessidade {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
