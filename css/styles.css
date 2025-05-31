@@ -4,8 +4,30 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: extrafont;
+  src: url(../fonts/Inter_18pt-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: regularfont;
+  src: url(../fonts/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: semifont;
+  src: url(../fonts/Inter_18pt-SemiBold.ttf);
+}
+
+:root {
+  --cor-base: #FCFCD7;
+  --cor-texto: #8643EC;
+  --cor-input: #f8d591;
+  --cor-borda: #F0AE56;
+}
+
 body {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   background-color: #fdfcd1;
   overflow-x: hidden;
@@ -22,13 +44,13 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .side-menu {
   position: fixed;
   top: 0;
-  left: -250px; 
+  left: -250px;
   width: 250px;
   height: 100%;
   background-color: #FFD8E4;
@@ -52,12 +74,12 @@ header {
 #s-home-hero {
   display: flex;
   align-items: center;
-  gap: 50px; 
+  gap: 50px;
   padding: 40px 20px 0px;
   overflow-x: hidden;
 }
 
-.s-home-hero-img img  {
+.s-home-hero-img img {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -65,7 +87,7 @@ header {
 
 .s-home-hero-content {
   background-color: #fefbd9;
-  padding: 0 10px; 
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +121,7 @@ header {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.sobre{
+.sobre {
   background-color: #a04def;
   color: white;
   padding: 20px;
@@ -114,21 +136,21 @@ header {
   margin: 1rem;
 }
 
-.sobre .left img{
-    max-width: 350px;
+.sobre .left img {
+  max-width: 350px;
 }
 
-.sobre .right{
-    display: flex;
-    flex-direction: column;
-    background-color: #fdfcd1;
-    padding: 40px;
-    color: #000;
-    max-height: 250px;
-    margin-top: 70px;
-    margin-right: 100px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+.sobre .right {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfcd1;
+  padding: 40px;
+  color: #000;
+  max-height: 250px;
+  margin-top: 70px;
+  margin-right: 100px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .sobre h3 {
@@ -146,12 +168,12 @@ header {
   background-color: #a04def;
 }
 
-.time h2{
-    color: white;
-    font-size: 50px;
+.time h2 {
+  color: white;
+  font-size: 50px;
 }
 
-.cards-time{
+.cards-time {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -159,7 +181,7 @@ header {
   margin: 30px;
 }
 
-.card-time{
+.card-time {
   background-color: #ffbe57;
   padding: 30px;
   border-radius: 10px;
@@ -168,25 +190,26 @@ header {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.card-time img{
-    width: 120px;
-    height: 150px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+.card-time img {
+  width: 120px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-#btn-linkedin, #btn-github{
-    background-color: #0077b5;
-    margin-top: 15px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
+#btn-linkedin,
+#btn-github {
+  background-color: #0077b5;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 
-#btn-github{
-    background-color: #24292e;
+#btn-github {
+  background-color: #24292e;
 }
 
 .card button {
@@ -204,9 +227,9 @@ header {
   text-align: center;
 }
 
-.doacoes img{
-    max-width: 300px;
-    max-height: 200px;
+.doacoes img {
+  max-width: 300px;
+  max-height: 200px;
 }
 
 .doacoes-grid {
@@ -219,7 +242,7 @@ header {
 }
 
 .box {
-  width: 45%; 
+  width: 45%;
   padding: 40px;
   border-radius: 8px;
   color: #000;
@@ -272,27 +295,27 @@ header {
 
 /*pag de alimentos*/
 
-.s-descricao-content{
+.s-descricao-content {
   padding: 100px 20px;
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 1020px;
-} 
+}
 
 .s-descricao-alimentos {
   padding: 40px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-.apresentacao{
+.apresentacao {
   background-color: #FFBE40;
   padding: 20px;
   margin-bottom: 20px;
   max-height: 150px;
-    font-weight: bold;
+  font-weight: bold;
   font-size: 18px;
 }
 
-.descricao-alimentos{
+.descricao-alimentos {
   max-width: 1000px;
 }
 
@@ -345,7 +368,7 @@ header {
   padding: 25px;
   text-align: center;
   max-width: 1020px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 #input-pesquisa {
@@ -369,7 +392,7 @@ header {
   margin: 20px auto;
   color: black;
   max-width: 900px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-endereco img {
@@ -417,7 +440,7 @@ header {
   max-width: 1000px;
   margin: 0 auto 40px auto;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bloco-intro-roupas p {
@@ -448,7 +471,7 @@ header {
   padding: 15px;
   border-radius: 4px;
   font-size: 14px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /*pagina de doação de dinheiro*/
@@ -596,10 +619,11 @@ header {
 
 /*pagina de voluntarios*/
 
-.s-content-voluntarios{
+.s-content-voluntarios {
   padding: 40px 300px;
   margin-top: 90px;
 }
+
 .intro h1 {
   text-align: center;
   font-size: 36px;
@@ -622,11 +646,11 @@ header {
 .form-section {
   background-color: #FFBE40;
   padding: 25px;
-  margin: 40px auto;  
+  margin: 40px auto;
   border-radius: 4px;
-  max-width: 700px;         
-  width: 100%;           
-  box-sizing: border-box; 
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-section h3 {
@@ -639,7 +663,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  width: 100%; 
+  width: 100%;
   box-sizing: border-box;
   padding: 20px;
 }
@@ -706,7 +730,7 @@ button {
   font-size: 1rem;
 }
 
-#pesquisa{
+#pesquisa {
   max-width: 400px;
   width: 100%;
   margin: 30px auto;
@@ -808,9 +832,9 @@ button {
   }
 
   .s-home-boasvindas {
-  margin-left: 0;
-  text-align: center;
-}
+    margin-left: 0;
+    text-align: center;
+  }
 
   .s-home-hero-img img {
     max-width: 100%;
@@ -861,7 +885,8 @@ button {
 
   .sobre .right {
     margin: 20px 0;
-    max-height: none; /* libera altura */
+    max-height: none;
+    /* libera altura */
     width: 90%;
   }
 
@@ -904,6 +929,7 @@ button {
     max-width: 100%;
   }
 }
+
 /* Responsivo para cards de endereços */
 @media (max-width: 768px) {
   .card-endereco {
@@ -941,7 +967,3 @@ button {
     text-align: center;
   }
 }
-
-
-
-

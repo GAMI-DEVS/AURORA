@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <main>
+          <!-- img -->
+          <div class="bloco">
+               <div class="primeirobloco"></div>
+          </div>
+          <!-- conteudo principal -->
+          <div class="bloco">
+               <div class="segundobloco">
+                    <h2 class="titulo">Bem-vindo(a) de volta!</h2>
+                    <form>
+                         <label for="email" class="txtlabel">E-mail*</label>
+                         <br>
+                         <input type="text" id="email" name="email" class="txt" required>
+                         <span class="error-msg" id="error-msg"></span>
+                         <br>
+                         <label for="senha" class="txtlabel">Senha*</label>
+                         <br>
+                         <input type="password" id="senha" name="senha" class="txt" required>
+                         <div class="divisao">
+                              <div class="checkbox">
+                                   <input type="checkbox" placeholder="Lembre-me" id="lembrar" class="box">
+                                   <label for="lembrar">Lembre-me</label>
+                              </div>
+                              <div class="esquecer">
+                                   <a class="bold esqueci" href="#">Esqueci minha senha</a>
+                              </div>
+                         </div>
+                         <div class="divbtn">
+                              <button type="submit" class="btn">Log in</button>
+                         </div>
+                    </form>
+                    <div class="divregistro">
+                         <p class="linkregistro"><span class="bold">Não possui conta? </span><a
+                                   href="cadastro.html">Registre-se</a></p>
+                    </div>
+               </div>
+          </div>
+     </main>
+</body>
+</html>

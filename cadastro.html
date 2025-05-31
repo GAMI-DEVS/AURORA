@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- img -->
+        <div class="bloco responsa">
+            <div class="primeirobloco"></div>
+        </div>
+        <!-- conteudo principal -->
+        <div class="bloco">
+            <div class="segundobloco">
+                <h2 class="titulo">Seja bem-vindo(a)!</h2>
+                <form>
+                    <label for="nome" class="txtlabel">Nome*</label>
+                    <br>
+                    <input type="text" id="nome" name="nome" class="txt" required>
+                    <br>
+                    <label for="tell" class="txtlabel">Telefone*</label>
+                    <br>
+                    <input type="text" id="tell" name="tell" class="txt" required>
+                    <br>
+                    <label for="email" class="txtlabel">E-mail*</label>
+                    <br>
+                    <input type="text" id="email" name="email" class="txt" required>
+                    <span class="error-msg" id="error-msg"></span>
+                    <br>
+                    <label for="senha" class="txtlabel">Senha*</label>
+                    <br>
+                    <input type="password" id="senha" name="senha" class="txt" required>
+                    <br>
+                    <label for="confirmar" class="txtlabel">Confirmar senha*</label>
+                    <br>
+                    <input type="password" id="confirmar" name="confirmar" class="txt" required>
+                    <div class="divbtn">
+                        <button type="submit" class="btn">Registre-se</button>
+                    </div>
+                </form>
+                <div class="divregistro">
+                    <p class="linkregistro"><span class="bold">Já possui conta? </span><a href="login.html">Fazer login</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

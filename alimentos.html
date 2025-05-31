@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doações - Alimentos</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doações - Alimentos</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-       <header>
-     <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
-     <nav id="side-menu" class="side-menu">
-     <a href="index.html">Home</a>
-     <a href="#sobre">Sobre</a>
-     <a href="#time">Time</a>
-     <a href="#doacoes">Doações</a>
-     <a href="alimentos.html">Doação Alimentos</a>
-     <a href="vestimentas.html">Doação de Lookinhos</a>
-     <a href="dinheiro.html">Doe Quantias</a>
-     <a href="faq.html">FAQ - Perguntas</a>
-     <a href="login.html">Login</a>
-     <a href="cadastro.html">Cadastrar</a>
-     </nav>
-       </header>
-    <section id="s-descricao-alimentos" class="s-descricao-alimentos">
-      
-      <div class="s-descricao-content">
-        <div class="apresentacao">
+  <header>
+    <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
+    <nav id="side-menu" class="side-menu">
+      <a href="index.html">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#time">Time</a>
+      <a href="#doacoes">Doações</a>
+      <a href="alimentos.html">Doação Alimentos</a>
+      <a href="vestimentas.html">Doação de Lookinhos</a>
+      <a href="dinheiro.html">Doe Quantias</a>
+      <a href="faq.html">FAQ - Perguntas</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </nav>
+  </header>
+  <section id="s-descricao-alimentos" class="s-descricao-alimentos">
+
+    <div class="s-descricao-content">
+      <div class="apresentacao">
         <p class="d-alimentos">Olá, seja bem-vindo(a) ao nosso espaço dos snacks!</p>
-        </div>
+      </div>
       <div class="descricao-alimentos">
         <p>
           Aqui na aurora, sabemos o quão a arrecadação de alimentos é necessária
@@ -37,179 +39,191 @@
           alimentos em situações como essa? Confira nossas recomendações abaixo:
         </p>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="s-lista-alimentos" id="s-lista-alimentos">
-      <div class="alimentos-container">
-        <img src="images/volunteers-9609005_1280.png" alt="Voluntários com alimentos" />
-        <div class="lista-alimentos">
-          <ul>
-            <li>Grãos: Arroz, feijão, lentilha, trigo, milho.</li>
-            <li>Farinhas: Farinha de trigo, farinha de mandioca, farinha de roxo.</li>
-            <li>Óleos e gorduras: Azeite, óleo de cozinha.</li>
-            <li>Açúcar, sal e outros temperos: Açúcar, sal, café, chá.</li>
-            <li>Alimentos em lata: Atum, sardinha, carne, legumes em conserva.</li>
-            <li>Alimentos secos: Frutas secas, castanhas, nozes.</li>
-            <li>Massa instantânea: Macarrão instantâneo, sopa instantânea.</li>
-            <li>Leite em pó: Leite em pó, leite UHT.</li>
-          </ul>
+  <section class="s-lista-alimentos" id="s-lista-alimentos">
+    <div class="alimentos-container">
+      <img src="images/volunteers-9609005_1280.png" alt="Voluntários com alimentos" />
+      <div class="lista-alimentos">
+        <ul>
+          <li>Grãos: Arroz, feijão, lentilha, trigo, milho.</li>
+          <li>Farinhas: Farinha de trigo, farinha de mandioca, farinha de roxo.</li>
+          <li>Óleos e gorduras: Azeite, óleo de cozinha.</li>
+          <li>Açúcar, sal e outros temperos: Açúcar, sal, café, chá.</li>
+          <li>Alimentos em lata: Atum, sardinha, carne, legumes em conserva.</li>
+          <li>Alimentos secos: Frutas secas, castanhas, nozes.</li>
+          <li>Massa instantânea: Macarrão instantâneo, sopa instantânea.</li>
+          <li>Leite em pó: Leite em pó, leite UHT.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="busca-locais">
+    <p>Agora que você já sabe o que pode doar, confira abaixo locais polos parceiros da aurora. para ter poder
+      contribuir em pró dessa causa!</p>
+  </section>
+
+  <input id="input-pesquisa" type="text" placeholder="pesquise locais específicos aqui" onkeyup="filtrarLocal()" />
+
+  <section class="enderecos-coleta">
+    <div class="card-endereco">
+      <img src="images/batista.jpeg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Igreja Batista do Povo – Bairro: Vila Mariana (Zona Sul)</strong><br>
+          • Endereço: Rua Domingos de Morais, 1100<br>
+          • Ponto de Referência: Próximo ao Metrô Ana Rosa</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/6X9FoQV5XU3a7CwZ6"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: arroz</span>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="busca-locais">
-      <p>Agora que você já sabe o que pode doar, confira abaixo locais polos parceiros da aurora. para ter poder contribuir em pró dessa causa!</p>
-    </section>
-
-    <input id="input-pesquisa" type="text" placeholder="pesquise locais específicos aqui" onkeyup="filtrarLocal()"/>
-    
-<section class="enderecos-coleta">
-  <div class="card-endereco">
-    <img src="images/batista.jpeg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Igreja Batista do Povo – Bairro: Vila Mariana (Zona Sul)</strong><br>
-      • Endereço: Rua Domingos de Morais, 1100<br>
-      • Ponto de Referência: Próximo ao Metrô Ana Rosa</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/6X9FoQV5XU3a7CwZ6"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: arroz</span>
+    <div class="card-endereco">
+      <img src="images/paroquiasaoluisg.png" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Paróquia São Luís Gonzaga – Bairro: Santo Amaro (Zona Sul)</strong><br>
+          • Endereço: Av. Adolfo Pinheiro, 1670<br>
+          • Ponto de Referência: Ao lado do Largo 13</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/3LZ5weZqy3BbCuBV8"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: feijão</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/paroquiasaoluisg.png" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Paróquia São Luís Gonzaga – Bairro: Santo Amaro (Zona Sul)</strong><br>
-      • Endereço: Av. Adolfo Pinheiro, 1670<br>
-      • Ponto de Referência: Ao lado do Largo 13</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/3LZ5weZqy3BbCuBV8"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: feijão</span>
+    <div class="card-endereco">
+      <img src="images/paroquiasantat.jpeg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Paróquia Santa Teresa de Jesus – Bairro: Santana (Zona Norte)</strong><br>
+          • Endereço: R. Copacabana, 54<br>
+          • Ponto de Referência: Próximo ao Metrô Santana</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/6PgZNY1VvUQujsJT7"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: leite</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/paroquiasantat.jpeg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Paróquia Santa Teresa de Jesus – Bairro: Santana (Zona Norte)</strong><br>
-      • Endereço: R. Copacabana, 54<br>
-      • Ponto de Referência: Próximo ao Metrô Santana</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/6PgZNY1VvUQujsJT7"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: leite</span>
+    <div class="card-endereco">
+      <img src="images/batistatucuruvi.jpg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Igreja Batista do Povo – Bairro: Tucuruvi (Zona Norte)</strong><br>
+          • Endereço: Av. Nova Cantareira, 3060<br>
+          • Ponto de Referência: Em frente ao Shopping Trimais</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/Vx84HGCP5b8rJP6H9"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: óleo</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/batistatucuruvi.jpg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Igreja Batista do Povo – Bairro: Tucuruvi (Zona Norte)</strong><br>
-      • Endereço: Av. Nova Cantareira, 3060<br>
-      • Ponto de Referência: Em frente ao Shopping Trimais</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/Vx84HGCP5b8rJP6H9"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: óleo</span>
+    <div class="card-endereco">
+      <img src="images/assembleia.jpeg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Igreja Evangélica Assembleia de Deus – Bairro: Itaquera (Zona Leste)</strong><br>
+          • Endereço: Rua Tomazzo Ferrara, 120<br>
+          • Ponto de Referência: Próximo ao Metrô Itaquera</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/HM427RTszY2mbQuf9"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: massa</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/assembleia.jpeg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Igreja Evangélica Assembleia de Deus – Bairro: Itaquera (Zona Leste)</strong><br>
-      • Endereço: Rua Tomazzo Ferrara, 120<br>
-      • Ponto de Referência: Próximo ao Metrô Itaquera</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/HM427RTszY2mbQuf9"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: massa</span>
+    <div class="card-endereco">
+      <img src="images/paroquiaassis.jpg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Paróquia São Francisco de Assis – Bairro: Ermelino Matarazzo (Zona Leste)</strong><br>
+          • Endereço: Av. Paranaguá, 2876<br>
+          • Ponto de Referência: Próxima à Av. São Miguel</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/8ResuDuSAE7T3HLN7"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: leite em pó</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/paroquiaassis.jpg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Paróquia São Francisco de Assis – Bairro: Ermelino Matarazzo (Zona Leste)</strong><br>
-      • Endereço: Av. Paranaguá, 2876<br>
-      • Ponto de Referência: Próxima à Av. São Miguel</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/8ResuDuSAE7T3HLN7"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: leite em pó</span>
+    <div class="card-endereco">
+      <img src="images/paroquiafatima.png" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Paróquia N. Sra. do Rosário de Fátima – Bairro: Lapa (Zona Oeste)</strong><br>
+          • Endereço: Rua Clélia, 1517<br>
+          • Ponto de Referência: Próxima ao Terminal Lapa</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/t54xTERiPcUE9HMG7"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: farinha</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/paroquiafatima.png" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Paróquia N. Sra. do Rosário de Fátima – Bairro: Lapa (Zona Oeste)</strong><br>
-      • Endereço: Rua Clélia, 1517<br>
-      • Ponto de Referência: Próxima ao Terminal Lapa</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/t54xTERiPcUE9HMG7"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: farinha</span>
+    <div class="card-endereco">
+      <img src="images/ibab.jpeg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Igreja Batista Água Branca – Bairro: Água Branca (Zona Oeste)</strong><br>
+          • Endereço: Rua Caiubí, 405<br>
+          • Ponto de Referência: Próxima à Av. Francisco Matarazzo</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/UrgT9hSbP3FSDVgZA"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: sal</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/ibab.jpeg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Igreja Batista Água Branca – Bairro: Água Branca (Zona Oeste)</strong><br>
-      • Endereço: Rua Caiubí, 405<br>
-      • Ponto de Referência: Próxima à Av. Francisco Matarazzo</p>
-      <div class="info-endereco">
-       <a href="https://maps.app.goo.gl/UrgT9hSbP3FSDVgZA"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: sal</span>
+    <div class="card-endereco">
+      <img src="images/catedralse.jpg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Catedral da Sé – Bairro: Sé (Centro)</strong><br>
+          • Endereço: Praça da Sé, s/n<br>
+          • Ponto de Referência: Próxima à estação Sé</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/nhvgckGY4TXBmUJG8"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: café</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card-endereco">
-    <img src="images/catedralse.jpg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Catedral da Sé – Bairro: Sé (Centro)</strong><br>
-      • Endereço: Praça da Sé, s/n<br>
-      • Ponto de Referência: Próxima à estação Sé</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/nhvgckGY4TXBmUJG8"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: café</span>
+    <div class="card-endereco">
+      <img src="images/largofrancisco.jpg" alt="Ponto de coleta">
+      <div class="conteudo-endereco">
+        <p><strong>Igreja São Francisco – Bairro: Centro (Largo São Francisco)</strong><br>
+          • Endereço: Largo São Francisco, 133<br>
+          • Ponto de Referência: Próxima à Faculdade de Direito da USP</p>
+        <div class="info-endereco">
+          <a href="https://maps.app.goo.gl/egZNAAygKAPMsJCt9"><button class="btn-localizacao">Acessar
+              localização</button></a>
+          <span class="necessidade">Precisando de: conservas</span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="card-endereco">
-    <img src="images/largofrancisco.jpg" alt="Ponto de coleta">
-    <div class="conteudo-endereco">
-      <p><strong>Igreja São Francisco – Bairro: Centro (Largo São Francisco)</strong><br>
-      • Endereço: Largo São Francisco, 133<br>
-      • Ponto de Referência: Próxima à Faculdade de Direito da USP</p>
-      <div class="info-endereco">
-        <a href="https://maps.app.goo.gl/egZNAAygKAPMsJCt9"><button class="btn-localizacao">Acessar localização</button></a>
-        <span class="necessidade">Precisando de: conservas</span>
+  <footer class="s-home-footer">
+    <div class="s-home-footer-container">
+      <div class="s-home-footer-left">
+        <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+      </div>
+      <div class="s-home-footer-right">
+        <p>+55 11 98234-5678 – Questões gerais</p>
+        <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+        <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+        <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
       </div>
     </div>
-  </div>
-</section>
-
-    <footer class="s-home-footer">
-  <div class="s-home-footer-container">
-    <div class="s-home-footer-left">
-      <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
-    </div>
-    <div class="s-home-footer-right">
-      <p>+55 11 98234-5678 – Questões gerais</p>
-      <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
-      <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
-      <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
-    </div>
-  </div>
-   </footer>
-    </main>
-    <script src="js/script.js"></script>
+  </footer>
+  </main>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
