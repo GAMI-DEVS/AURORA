@@ -48,7 +48,7 @@ Nosso propósito é conectar pessoas dispostas a ajudar com quem mais precisa, p
 ## 👥 Integrantes
 
 - [Gabriely Bonfim Silva, RM 566242]
-- [Henrique Rodrigues Vespasiano, RM 566242]
+- [Henrique Rodrigues Vespasiano, RM 562917]
 - [Mirelly Sousa Alves, RM 566299 ]
 
 ---
