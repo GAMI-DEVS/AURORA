@@ -1,8 +1,3 @@
-document.getElementById('volunteerForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Dados enviados com sucesso!');
-});
-
 
     function filtrarFAQ() {
       const input = document.getElementById("pesquisa").value.toLowerCase();
@@ -14,8 +9,6 @@ document.getElementById('volunteerForm').addEventListener('submit', function(e) 
       });
     }
 
-
-
     function filtrarLocal() {
       const input = document.getElementById("input-pesquisa").value.toLowerCase();
       const perguntas = document.querySelectorAll(".card-endereco");
@@ -26,6 +19,7 @@ document.getElementById('volunteerForm').addEventListener('submit', function(e) 
       });
     }
 
+    
 
 function toggleSideMenu() {
   const menu = document.getElementById('side-menu');
@@ -40,4 +34,7 @@ document.addEventListener('click', function(event) {
   if (menu.style.left === '0px' && !menu.contains(event.target) && !button.contains(event.target)) {
     menu.style.left = '-250px';
   }
+});
+document.getElementById('close-menu').addEventListener('click', function() {
+  toggleSideMenu();
 });

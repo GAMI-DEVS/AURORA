@@ -5,47 +5,92 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Login</title>
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-     <main>
-          <!-- img -->
-          <div class="bloco">
-               <div class="primeirobloco"></div>
+<body id="body-login-cadastro">
+  <main id="main-login-cadastro">
+    <div class="bloco">
+      <div class="primeirobloco"></div>
+    </div>
+    <div class="bloco">
+      <div class="segundobloco">
+        <h2 class="titulo">Bem-vindo(a) de volta!</h2>
+        <form id="login-form">
+          <label for="email" class="txtlabel">E-mail*</label>
+          <input type="email" id="email" name="email" class="txt" required>
+          <span class="error-msg" id="email-error"></span>
+
+          <label for="senha" class="txtlabel">Senha*</label>
+          <input type="password" id="senha" name="senha" class="txt" required>
+          <span class="error-msg" id="senha-error"></span>
+
+          <div class="divisao">
+            <div class="checkbox">
+              <input type="checkbox" id="lembrar" class="box">
+              <label for="lembrar">Lembre-me</label>
+            </div>
+            <div class="esquecer">
+              <a class="bold esqueci" href="#">Esqueci minha senha</a>
+            </div>
           </div>
-          <!-- conteudo principal -->
-          <div class="bloco">
-               <div class="segundobloco">
-                    <h2 class="titulo">Bem-vindo(a) de volta!</h2>
-                    <form>
-                         <label for="email" class="txtlabel">E-mail*</label>
-                         <br>
-                         <input type="text" id="email" name="email" class="txt" required>
-                         <span class="error-msg" id="error-msg"></span>
-                         <br>
-                         <label for="senha" class="txtlabel">Senha*</label>
-                         <br>
-                         <input type="password" id="senha" name="senha" class="txt" required>
-                         <div class="divisao">
-                              <div class="checkbox">
-                                   <input type="checkbox" placeholder="Lembre-me" id="lembrar" class="box">
-                                   <label for="lembrar">Lembre-me</label>
-                              </div>
-                              <div class="esquecer">
-                                   <a class="bold esqueci" href="#">Esqueci minha senha</a>
-                              </div>
-                         </div>
-                         <div class="divbtn">
-                              <button type="submit" class="btn">Log in</button>
-                         </div>
-                    </form>
-                    <div class="divregistro">
-                         <p class="linkregistro"><span class="bold">Não possui conta? </span><a
-                                   href="cadastro.html">Registre-se</a></p>
-                    </div>
-               </div>
+
+          <div class="divbtn">
+            <button type="submit" class="btn">Log in</button>
           </div>
-     </main>
+        </form>
+
+        <div class="divregistro">
+          <p class="linkregistro"><span class="bold">Não possui conta?</span>
+            <a href="cadastro.html">Registre-se</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-login">
+    <div class="s-home-footer-container">
+      <div class="footer-left">
+        <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+      </div>
+      <div class="s-home-footer-right">
+        <p>+55 11 98234-5678 – Questões gerais</p>
+        <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+        <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+        <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      document.getElementById('email-error').textContent = '';
+      document.getElementById('senha-error').textContent = '';
+
+      const email = document.getElementById('email').value.trim();
+      const senha = document.getElementById('senha').value.trim();
+      let valido = true;
+
+      if (email === '') {
+        document.getElementById('email-error').textContent = 'Preencha o e-mail.';
+        valido = false;
+      } else if (!email.includes('@')) {
+        document.getElementById('email-error').textContent = 'E-mail inválido.';
+        valido = false;
+      }
+
+      if (senha === '') {
+        document.getElementById('senha-error').textContent = 'Preencha a senha.';
+        valido = false;
+      }
+
+      if (valido) {
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
 </body>
 </html>

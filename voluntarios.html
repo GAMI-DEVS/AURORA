@@ -13,16 +13,17 @@
     <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
     <nav id="side-menu" class="side-menu">
       <a href="index.html">Home</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#time">Time</a>
-      <a href="#doacoes">Doações</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastrar</a>
       <a href="alimentos.html">Doação Alimentos</a>
       <a href="vestimentas.html">Doação de Lookinhos</a>
       <a href="dinheiro.html">Doe Quantias</a>
-      <a href="faq.html">FAQ - Perguntas</a>
-      <a href="login.html">Login</a>
-      <a href="cadastro.html">Cadastrar</a>
+      <a href="faq.html">FAQ - Perguntas Frequentes</a>
+      <a href="voluntarios.html">Missões - Seja AU.</a>
+      <a href="conscientizacao.html">Que Tal Conscientizar?!</a>
+      <a href="contato.html">Ajuda & Contato</a>
     </nav>
+    <a href="index.html#time" class="btn-integrantes">Time DEV AU.</a>
   </header>
   <main>
 
@@ -43,36 +44,43 @@
     </section>
 
     <section class="form-section">
-      <form id="volunteerForm">
-        <h3>Preencha o formulário abaixo caso queira fazer parte desse time!</h3>
 
-        <div class="form-group">
-          <label for="nome">nome completo:</label>
-          <input type="text" id="nome" name="nome" required />
-        </div>
+<form id="volunteerForm">
+  <h3>Preencha o formulário abaixo caso queira fazer parte desse time!</h3>
 
-        <div class="form-group">
-          <label for="data">data de nascimento:</label>
-          <input type="date" id="data" name="data" required />
-        </div>
+  <div class="form-group">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required />
+    <span class="error-msg" id="nome-error"></span>
+  </div>
 
-        <div class="form-group">
-          <label for="telefone">número de telefone:</label>
-          <input type="tel" id="telefone" name="telefone" required />
-        </div>
+  <div class="form-group">
+    <label for="data">Data de nascimento:</label>
+    <input type="date" id="data" name="data" required />
+    <span class="error-msg" id="data-error"></span>
+  </div>
 
-        <div class="form-group">
-          <label for="emergencia">contato de emergência:</label>
-          <input type="tel" id="emergencia" name="emergencia" required />
-        </div>
+  <div class="form-group">
+    <label for="telefone">Número de telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required />
+    <span class="error-msg" id="telefone-error"></span>
+  </div>
 
-        <div class="form-group endereco">
-          <label for="endereco">endereço:</label>
-          <input type="text" id="endereco" name="endereco" required />
-        </div>
+  <div class="form-group">
+    <label for="emergencia">Contato de emergência:</label>
+    <input type="tel" id="emergencia" name="emergencia" required />
+    <span class="error-msg" id="emergencia-error"></span>
+  </div>
 
-        <button type="submit">Enviar dados</button>
-      </form>
+  <div class="form-group endereco">
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required />
+    <span class="error-msg" id="endereco-error"></span>
+  </div>
+
+  <button type="submit">Enviar dados</button>
+</form>
+
       </div>
     </section>
     <footer class="s-home-footer">
@@ -91,6 +99,64 @@
   </main>
   <script src="js/script.js"></script>
     <script>
+
+    document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Limpar mensagens anteriores
+    document.getElementById('nome-error').textContent = '';
+    document.getElementById('data-error').textContent = '';
+    document.getElementById('telefone-error').textContent = '';
+    document.getElementById('emergencia-error').textContent = '';
+    document.getElementById('endereco-error').textContent = '';
+
+    const nome = document.getElementById('nome').value.trim();
+    const data = document.getElementById('data').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const emergencia = document.getElementById('emergencia').value.trim();
+    const endereco = document.getElementById('endereco').value.trim();
+
+    let valido = true;
+
+    if (nome === '') {
+      document.getElementById('nome-error').textContent = 'Preencha o nome.';
+      valido = false;
+    }
+
+    if (data === '') {
+      document.getElementById('data-error').textContent = 'Preencha a data de nascimento.';
+      valido = false;
+    }
+
+    if (telefone === '') {
+      document.getElementById('telefone-error').textContent = 'Preencha o telefone.';
+      valido = false;
+    } else if (telefone.length < 8) {
+      document.getElementById('telefone-error').textContent = 'Telefone inválido.';
+      valido = false;
+    }
+
+    if (emergencia === '') {
+      document.getElementById('emergencia-error').textContent = 'Preencha o contato de emergência.';
+      valido = false;
+    } else if (emergencia.length < 8) {
+      document.getElementById('emergencia-error').textContent = 'Número inválido.';
+      valido = false;
+    }
+
+    if (endereco === '') {
+      document.getElementById('endereco-error').textContent = 'Preencha o endereço.';
+      valido = false;
+    }
+
+    if (valido) {
+      alert('Dados enviados com sucesso!');
+      // Aqui você pode enviar para backend, se quiser.
+      document.getElementById('volunteerForm').reset();
+    }
+  });
+
+
   window.watsonAssistantChatOptions = {
     integrationID: "9ef8f6b1-8920-4e0f-8f12-96ab7afa2f7b", // The ID of this integration.
     region: "au-syd", // The region your integration is hosted in.

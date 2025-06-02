@@ -47,6 +47,25 @@ header {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.btn-integrantes {
+  padding: 10px 20px;
+  background-color: #805bd3;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-integrantes:hover {
+  background-color: #c3b6df;
+}
+
+.menu-sanduiche{
+  cursor: pointer;
+}
+
 .side-menu {
   position: fixed;
   top: 0;
@@ -57,6 +76,12 @@ header {
   padding-top: 60px;
   transition: 0.3s ease;
   z-index: 1001;
+  cursor: pointer;
+}
+
+#close-menu{
+  max-width: 30px;
+  margin-left: 190px;
 }
 
 .side-menu a {
@@ -65,6 +90,7 @@ header {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .side-menu a:hover {
@@ -74,8 +100,8 @@ header {
 #s-home-hero {
   display: flex;
   align-items: center;
-  gap: 50px;
-  padding: 40px 20px 0px;
+  gap: 60px;
+  padding: 20px auto;
   overflow-x: hidden;
 }
 
@@ -124,7 +150,7 @@ header {
 .sobre {
   background-color: #a04def;
   color: white;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -188,6 +214,12 @@ header {
   width: 250px;
   max-height: 400px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card-time:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-time img {
@@ -247,8 +279,13 @@ header {
   border-radius: 8px;
   color: #000;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 .box.green {
   background-color: #cfe7a7;
   width: 350px;
@@ -260,7 +297,7 @@ header {
   width: 350px;
   height: 300px;
 }
-
+/*footer*/
 .s-home-footer {
   background-color: #a04def;
   color: white;
@@ -292,6 +329,13 @@ header {
   flex-direction: column;
   gap: 10px;
 }
+
+.footer-login, .footer-cadastro {
+  background-color: #a04def;
+  color: white;
+  padding: 40px 20px;
+}
+
 
 /*pag de alimentos*/
 
@@ -823,6 +867,211 @@ button {
   color: #000;
 }
 
+/*Página de login e cadastro*/
+
+#body-login-cadastro {
+     background-color: var(--cor-base);
+     font-family: regularfont;
+}
+
+#main-login-cadastro {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.bloco {
+     width: 50%;
+}
+
+.primeirobloco {
+     background-image: url(../images/auroray.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 100%;
+}
+
+.segundobloco {
+     padding: 80px;
+}
+
+.titulo {
+     font-family: extrafont;
+     color: var(--cor-texto);
+     font-size: 36px;
+     margin-bottom: 30px;
+     text-align: center;
+}
+
+label {
+     color: var(--cor-texto);
+     font-size: 18px;
+}
+
+.txt {
+     background-color: var(--cor-input);
+     border: 1px solid var(--cor-borda);
+     border-radius: var(--border-box);
+     width: 100%;
+     height: 45px;
+     margin: 8px 0 16px 0;
+     padding: 0 15px;
+     font-size: 16px;
+}
+
+.checkbox input {
+     accent-color: var(--cor-borda);
+}
+
+.divisao {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10px;
+     margin: 15px 0;
+}
+
+.bold {
+     font-family: semifont;
+     color: var(--cor-texto);
+}
+
+.esqueci {
+     text-decoration: none;
+     color: var(--cor-texto);
+}
+
+.esqueci:hover {
+     text-decoration: underline;
+}
+
+.linkregistro {
+     text-align: center;
+}
+
+.linkregistro a {
+     color: var(--cor-texto);
+}
+
+.btn {
+     width: 200px;
+     height: 45px;
+     border: none;
+     border-radius: var(--border-box);
+     background-color: var(--cor-texto);
+     color: var(--cor-borda);
+     font-size: 18px;
+     font-family: semifont;
+     cursor: pointer;
+     transition: background-color 0.3s;
+}
+
+.btn:hover {
+     background-color: #701fe9;
+}
+
+.divbtn,
+.divregistro {
+     margin: 30px 0px;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
+
+/*Fale conosco*/
+
+.intro-contato-aurora{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fale-conosco{
+  font-weight: bold;
+  text-align: center;
+  color: #805bd3;
+  margin-top: 10px;
+  font-size: 36px;
+}
+/* Responsividade Login e cadastro*/
+
+@media (max-width: 599.9px) {
+     main{
+          display: block;
+          justify-content: center;
+          width: 100%;
+     }
+     
+     .responsa {
+          visibility: hidden;
+     }
+
+     .segundobloco {
+          margin: auto;
+          padding: 0;
+          width: 100%;
+     }
+
+     .bloco {
+          width: 90%;
+          margin: 30px auto;
+     }
+}
+
+@media (min-width: 600px) and (max-width: 767.9px) {
+     main{
+          display: block;
+          justify-content: center;
+          width: 100%;
+     }
+     
+     .responsa {
+          visibility: hidden;
+     }
+
+     .segundobloco {
+          margin: auto;
+          padding: 0;
+          width: 100%;
+     }
+
+     .bloco {
+          width: 90%;
+          margin: 30px auto;
+     }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+     main{
+          width: 100%;
+     }
+
+     .responsa{
+          height: 100%;
+     }
+
+     .primeirobloco {
+          background-image: url(../images/auroray.jpeg);
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 1000px;
+          background-size: 100%;
+     }
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+     main{
+          width: 100%;
+     }
+}
+
+@media (min-width: 1200px) {
+     main{
+          width: 100%;
+     }
+}
 
 /* RESPONSIVO - TELAS MÉDIAS */
 @media (max-width: 768px) {
@@ -967,3 +1216,4 @@ button {
     text-align: center;
   }
 }
+
