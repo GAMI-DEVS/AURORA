@@ -1,6 +1,6 @@
 # AURORA
 A personificação da resiliência.
-# 🌟 Rede Aurora — Projeto de Conscientização e Apoio 🌟
+# 🌟 Rede Aurora — Projeto de Conscientização e Apoio
 
 ## 🎯 Objetivo do Projeto
 
