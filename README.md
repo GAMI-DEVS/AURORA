@@ -12,6 +12,7 @@ Nosso propósito é conectar pessoas dispostas a ajudar com quem mais precisa, p
 ## 🗂️ Estrutura de Pastas e Arquivos
 
 /
+
 ├── css/
 
 │ └── styles.css
