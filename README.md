@@ -17,21 +17,37 @@ Nosso propósito é conectar pessoas dispostas a ajudar com quem mais precisa, p
 │ └── styles.css
 
 ├── js/
+
 │ └── script.js
+
 ├── images/
+
 │ └── (imagens diversas do projeto)
+
 ├── fontes/
+
 │ └── (fontes personalizadas)
+
 ├── index.html
+
 ├── login.html
+
 ├── cadastro.html
+
 ├── alimentos.html
+
 ├── vestimentas.html
+
 ├── dinheiro.html
+
 ├── faq.html
+
 ├── voluntarios.html
+
 ├── conscientizacao.html
+
 ├── contato.html
+
 └── README.md
 
 
