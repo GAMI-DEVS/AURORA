@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="body-login-cadastro">
+  <main id="main-login-cadastro">
+
+        <div class="bloco">
+            <div class="segundobloco">
+                <h2 class="titulo">Seja bem-vindo(a)! Vamos Realizar Seu Cadastro?</h2>
+<form id="registro-form">
+    <label for="nome" class="txtlabel">Nome*</label>
+    <input type="text" id="nome" name="nome" class="txt" required>
+    <span class="error-msg" id="nome-error"></span>
+
+    <label for="tell" class="txtlabel">Telefone*</label>
+    <input type="text" id="tell" name="tell" class="txt" required>
+    <span class="error-msg" id="tell-error"></span>
+
+    <label for="email" class="txtlabel">E-mail*</label>
+    <input type="text" id="email" name="email" class="txt" required>
+    <span class="error-msg" id="email-error"></span>
+
+    <label for="senha" class="txtlabel">Senha*</label>
+    <input type="password" id="senha" name="senha" class="txt" required>
+    <span class="error-msg" id="senha-error"></span>
+
+    <label for="confirmar" class="txtlabel">Confirmar senha*</label>
+    <input type="password" id="confirmar" name="confirmar" class="txt" required>
+    <span class="error-msg" id="confirmar-error"></span>
+
+    <div class="divbtn">
+        <button type="submit" class="btn">Registre-se</button>
+    </div>
+</form>
+                <div class="divregistro">
+                    <p class="linkregistro"><span class="bold">Já possui conta? </span><a href="login.html">Fazer
+                            login</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+      <footer class="footer-cadastro">
+    <div class="s-home-footer-container">
+      <div class="s-home-footer-left">
+        <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+      </div>
+      <div class="s-home-footer-right">
+        <p>+55 11 98234-5678 – Questões gerais</p>
+        <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+        <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+        <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+      document.getElementById('registro-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Limpa mensagens de erro
+    document.getElementById('nome-error').textContent = '';
+    document.getElementById('tell-error').textContent = '';
+    document.getElementById('email-error').textContent = '';
+    document.getElementById('senha-error').textContent = '';
+    document.getElementById('confirmar-error').textContent = '';
+
+    const nome = document.getElementById('nome').value.trim();
+    const tell = document.getElementById('tell').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const senha = document.getElementById('senha').value.trim();
+    const confirmar = document.getElementById('confirmar').value.trim();
+
+    let valido = true;
+
+    if (nome === '') {
+      document.getElementById('nome-error').textContent = 'Preencha com seu nome completo.';
+      valido = false;
+    }
+
+    if (tell === '') {
+      document.getElementById('tell-error').textContent = 'Preencha com seu número de telefone.';
+      valido = false;
+    } else if (tell.length < 8) {
+      document.getElementById('tell-error').textContent = 'Telefone inválido.';
+      valido = false;
+    }
+
+    if (email === '') {
+      document.getElementById('email-error').textContent = 'Preencha o e-mail.';
+      valido = false;
+    } else if (!email.includes('@')) {
+      document.getElementById('email-error').textContent = 'E-mail inválido. Inclua um "@".';
+      valido = false;
+    }
+
+    if (senha === '') {
+      document.getElementById('senha-error').textContent = 'Preencha a senha.';
+      valido = false;
+    }
+
+    if (confirmar === '') {
+      document.getElementById('confirmar-error').textContent = 'Confirme a senha.';
+      valido = false;
+    } else if (senha !== confirmar) {
+      document.getElementById('confirmar-error').textContent = 'As senhas não coincidem.';
+      valido = false;
+    }
+
+    if (valido) {
+      alert('Registro efetuado com sucesso!');
+      window.location.href = 'login.html';
+    }
+  });
+    
+  </script>
+</body>
+</html>
