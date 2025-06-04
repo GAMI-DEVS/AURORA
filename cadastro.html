@@ -10,14 +10,10 @@
 
 <body id="body-login-cadastro">
   <main id="main-login-cadastro">
-        <!-- img -->
-        <div class="bloco responsa">
-            <div class="primeirobloco"></div>
-        </div>
-        <!-- conteudo principal -->
+
         <div class="bloco">
             <div class="segundobloco">
-                <h2 class="titulo">Seja bem-vindo(a)!</h2>
+                <h2 class="titulo">Seja bem-vindo(a)! Vamos Realizar Seu Cadastro?</h2>
 <form id="registro-form">
     <label for="nome" class="txtlabel">Nome*</label>
     <input type="text" id="nome" name="nome" class="txt" required>
@@ -86,12 +82,12 @@
     let valido = true;
 
     if (nome === '') {
-      document.getElementById('nome-error').textContent = 'Preencha o nome.';
+      document.getElementById('nome-error').textContent = 'Preencha com seu nome completo.';
       valido = false;
     }
 
     if (tell === '') {
-      document.getElementById('tell-error').textContent = 'Preencha o telefone.';
+      document.getElementById('tell-error').textContent = 'Preencha com seu número de telefone.';
       valido = false;
     } else if (tell.length < 8) {
       document.getElementById('tell-error').textContent = 'Telefone inválido.';
@@ -102,7 +98,7 @@
       document.getElementById('email-error').textContent = 'Preencha o e-mail.';
       valido = false;
     } else if (!email.includes('@')) {
-      document.getElementById('email-error').textContent = 'E-mail inválido.';
+      document.getElementById('email-error').textContent = 'E-mail inválido. Inclua um "@".';
       valido = false;
     }
 
@@ -121,7 +117,7 @@
 
     if (valido) {
       alert('Registro efetuado com sucesso!');
-      window.location.href = 'login.html';
+      window.location.href = 'index.html';
     }
   });
     

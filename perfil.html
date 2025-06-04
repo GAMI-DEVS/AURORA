@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU PERFIL AU.</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="body-profile">
+    <header>
+    <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
+    <nav id="side-menu" class="side-menu">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastrar</a>
+      <a href="alimentos.html">Doação Alimentos</a>
+      <a href="vestimentas.html">Doação de Lookinhos</a>
+      <a href="dinheiro.html">Doe Quantias</a>
+      <a href="faq.html">FAQ</a>
+      <a href="voluntarios.html">Missões - Seja AU.</a>
+      <a href="conscientizacao.html">Que Tal Conscientizar?!</a>
+      <a href="contato.html">Ajuda & Contato</a>
+      <a href="perfil.html">Meu Perfil</a>
+      <a href="alertas.html">Alertas</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="infos-pessoais" class="infos-pessoais">
+  <h1 class="titulo-perfil">MEU PERFIL</h1>
+
+  <div class="profile">
+    <div class="profile-icon">👤</div>
+
+    <div class="info green">
+      <span class="icon">👤</span>
+      <span>Mirelly Sousa</span>
+    </div>
+
+    <div class="info orange">
+      <span class="icon">✉️</span>
+      <span>mirelly@gmail.com</span>
+    </div>
+
+    <div class="info purple">
+      <img  id="img-coin" src="images/au_coin (1).png" alt="moeda da rede aurora">
+      <span>200 AU. Coins</span>
+    </div>
+  </div>
+  </section>
+
+  <section id="acoes" class="acoes">
+  <h2 class="titulo-perfil">ÚLTIMAS CONTRIBUIÇÕES</h2>
+
+  <div class="contributions">
+    <div class="caixa green">
+      <p>você doou:</p>
+      <p class="amount">200 reais</p>
+    </div>
+
+    <div class="caixa orange">
+      <p>Essa quantia foi destinada à:</p>
+      <p><strong>50%</strong> – roupas</p>
+      <p><strong>30%</strong> – alimentos</p>
+      <p><strong>20%</strong> – itens de higiene pessoal</p>
+    </div>
+  </div>
+  </section>
+  </main>
+
+    <footer class="s-home-footer">
+    <div class="s-home-footer-container">
+      <div class="s-home-footer-left">
+        <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+      </div>
+      <div class="s-home-footer-right">
+        <p>+55 11 98234-5678 – Questões gerais</p>
+        <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+        <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+        <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "9ef8f6b1-8920-4e0f-8f12-96ab7afa2f7b", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "0e50b619-24b7-450d-987c-b2ffd9839e9a", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+
+  console.log("Página carregada com sucesso!");
+
+</script>
+</body>
+</html>

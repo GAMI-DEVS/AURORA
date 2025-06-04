@@ -82,8 +82,6 @@ Nosso propósito é conectar pessoas dispostas a ajudar com quem mais precisa, p
 
 📌 Este repositório contém todas as páginas do projeto, formulários validados, design responsivo e conteúdo completo para facilitar o engajamento da sociedade com ações sociais.
 
+### Páginas de Login e Cadastro 
+- essas páginas foram criadas exclusivamentes para usuários que desejammanter-se ligados a notificações e participar das missões AURORA. Logo, é necessário criar uma conta para acessar as páginas de PERFIL e ALERTAS. 
 ---
-
-## 🚀 Contribua!
-
-Sinta-se à vontade para sugerir melhorias. E caso seja nosso professor, acho que nosso 100 deveria estar G A R A N T I D O.

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERTAS AU.</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+    <div id="menu-button" class="menu-sanduiche" onclick="toggleSideMenu()">☰</div>
+    <nav id="side-menu" class="side-menu">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastrar</a>
+      <a href="alimentos.html">Doação Alimentos</a>
+      <a href="vestimentas.html">Doação de Lookinhos</a>
+      <a href="dinheiro.html">Doe Quantias</a>
+      <a href="faq.html">FAQ</a>
+      <a href="voluntarios.html">Missões - Seja AU.</a>
+      <a href="conscientizacao.html">Que Tal Conscientizar?!</a>
+      <a href="contato.html">Ajuda & Contato</a>
+      <a href="perfil.html">Meu Perfil</a>
+      <a href="alertas.html">Alertas</a>
+    </nav>
+  </header>
+
+    <main id="main-alertas">
+      <h1>ALERTAS AU.</h1>
+    <section class="alerta">
+      <h2>ALERTA DE ENCHENTE</h2>
+      <p>
+        Recebemos informações sobre alertas de enchentes na 
+        <strong>ZONA LESTE de SP</strong> na região do 
+        <strong>JARDIM HELENA - VILA MARA</strong>. 
+        Estamos mobilizando o time AU. VOLUNTÁRIOS para irmos até o local e ajudarmos as vítimas com orientações. 
+        Em breve, traremos mais infos sobre e as necessidades dessa região.
+      </p>
+      <time datetime="2025-05-03T17:30">03/05/2025 às 17h30</time>
+    </section>
+
+    <section class="alerta">
+      <h2>ALERTA DE ONDA DE CALOR INTENSO</h2>
+      <p>
+        Recebemos informações sobre alertas de 
+        <strong>CALOR INTENSO</strong> na 
+        <strong>ZONA SUL de SP</strong> na região do 
+        <strong>CAMBUCI - VILA MARIANA</strong>. 
+        Estamos mobilizando o time AU. VOLUNTÁRIOS para irmos até o local e ajudarmos distribuindo água e dicas de como se cuidar. 
+        Em breve, traremos mais infos sobre e as necessidades dessa região.
+      </p>
+      <time datetime="2025-06-03T12:00">03/06/2025 às 12h00</time>
+    </section>
+  </main>
+
+    <footer class="s-home-footer">
+    <div class="s-home-footer-container">
+      <div class="s-home-footer-left">
+        <h2 class="s-home-footer-titulo">rede<br><span>aurora.</span></h2>
+      </div>
+      <div class="s-home-footer-right">
+        <p>+55 11 98234-5678 – Questões gerais</p>
+        <p><strong>atendimento@aurorahub.com.br</strong> – Atendimento geral</p>
+        <p><strong>suporte@aurorahub.com.br</strong> – Suporte técnico</p>
+        <p><strong>financeiro@aurorahub.com.br</strong> – Assuntos financeiros</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "9ef8f6b1-8920-4e0f-8f12-96ab7afa2f7b", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "0e50b619-24b7-450d-987c-b2ffd9839e9a", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>

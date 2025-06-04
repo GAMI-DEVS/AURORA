@@ -10,9 +10,7 @@
 
 <body id="body-login-cadastro">
   <main id="main-login-cadastro">
-    <div class="bloco">
-      <div class="primeirobloco"></div>
-    </div>
+
     <div class="bloco">
       <div class="segundobloco">
         <h2 class="titulo">Bem-vindo(a) de volta!</h2>
@@ -27,11 +25,8 @@
 
           <div class="divisao">
             <div class="checkbox">
-              <input type="checkbox" id="lembrar" class="box">
+              <input type="checkbox" id="lembrar" class="box" alt="este recurso salvará sua senha automaticamente">
               <label for="lembrar">Lembre-me</label>
-            </div>
-            <div class="esquecer">
-              <a class="bold esqueci" href="#">Esqueci minha senha</a>
             </div>
           </div>
 
@@ -78,7 +73,7 @@
         document.getElementById('email-error').textContent = 'Preencha o e-mail.';
         valido = false;
       } else if (!email.includes('@')) {
-        document.getElementById('email-error').textContent = 'E-mail inválido.';
+        document.getElementById('email-error').textContent = 'E-mail inválido. É necessário o uso de @.';
         valido = false;
       }
 
